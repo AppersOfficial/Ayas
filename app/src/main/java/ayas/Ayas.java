@@ -7,7 +7,7 @@ import java.util.*;
 
 public class Ayas extends FragmentActivity {
     private Context context;
-    private ArrayList<String> ids = new ArrayList<>();
+    private HashMap<String, String> ids = new HashMap<>();
 
     public Ayas(){}
     
@@ -24,7 +24,7 @@ public class Ayas extends FragmentActivity {
     }
 
     public boolean hasId(String id) {
-        if (ids.contains(id)) {
+        if (ids.containsKey(id)) {
             return true;
         } else {
             return false;
@@ -32,7 +32,7 @@ public class Ayas extends FragmentActivity {
     }
 
     public String getLayoutId(String id) {
-        return ids.get(id);
+        return ids.get(id).toString();
     }
 
     protected void onBorn() {
