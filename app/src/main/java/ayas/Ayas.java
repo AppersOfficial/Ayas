@@ -1,6 +1,7 @@
 package ayas;
 
 import android.content.Context;
+import android.os.Bundle;
 import androidx.fragment.app.FragmentActivity;
 import java.util.*;
 
@@ -32,5 +33,22 @@ final public class Ayas extends FragmentActivity {
 
     public String getLayoutId(String id) {
         return ids.get(id);
+    }
+
+    protected void onBorn() {
+        Bundle v = new Bundle();
+        super.onCreate(v);
+    }
+
+    public void onView() {
+        super.onStart();
+    }
+
+    public void onEnd() {
+        super.onDestroy();
+    }
+
+    public void onBack() {
+        super.onBackPressed();
     }
 }
