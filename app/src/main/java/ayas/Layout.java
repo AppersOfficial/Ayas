@@ -5,6 +5,8 @@ import java.util.*;
 
 public class Layout {
 
+    private Ayas ayas;
+
     private String id;
     public static final int VIEW_GONE = 8;
     public static final int CENTER = 17;
