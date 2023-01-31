@@ -36,7 +36,9 @@ public class Layout {
     
     public Layout(String id, int width, int height, int orientation, int backgroundColor, int gravity) {
         if (ayas.hasId(id)) {
-            throws new IdentException("Id " + id + " has been already defined");
+            throws new IdentException("ID '" + id + "' has been already defined");
+        } else {
+            
         }
     }
 }
