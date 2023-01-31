@@ -1,6 +1,7 @@
 package ayas;
 
 import android.widget.LinearLayout;
+import ayas.except.IdentException;
 import java.util.*;
 
 public class Layout {
@@ -35,7 +36,7 @@ public class Layout {
     
     public Layout(String id, int width, int height, int orientation, int backgroundColor, int gravity) {
         if (ayas.hasId(id)) {
-            
+            throws new IdentException("Id " + id + " has been already defined");
         }
     }
 }
