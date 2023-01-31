@@ -34,7 +34,11 @@ public class Layout {
 
     public Layout(){}
     
-    public Layout(int width, int height, int orientation, int backgroundColor, int gravity) {
-        LinearLayout layout = new LinearLayout(
+    public Layout(int width, int height, int orientation, int color, int gravity) {
+        LinearLayout layout = new LinearLayout(ayas.getApplicationContext());
+        layout.setLayoutParams(new LinearLayout.LayoutParams(width, height));
+        layout.setOrientation(orientation);
+        layout.setBackgroundColor(color);
+        layout.setGravity(gravity);
     }
 }
