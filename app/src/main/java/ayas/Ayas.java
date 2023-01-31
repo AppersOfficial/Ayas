@@ -5,7 +5,7 @@ import android.os.Bundle;
 import androidx.fragment.app.FragmentActivity;
 import java.util.*;
 
-final public class Ayas extends FragmentActivity {
+public class Ayas extends FragmentActivity {
     private Context context;
     private ArrayList<String> ids = new ArrayList<>();
 
