@@ -51,4 +51,8 @@ final public class Ayas extends FragmentActivity {
     public void onBack() {
         super.onBackPressed();
     }
+
+    public void onContinue() {
+        super.onResume();
+    }
 }
