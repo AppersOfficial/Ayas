@@ -21,4 +21,12 @@ final public class Ayas extends FragmentActivity {
     public Context page() {
         return context;
     }
+
+    public boolean hasId(String id) {
+        if (ids.contains(id)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
