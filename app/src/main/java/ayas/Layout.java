@@ -34,11 +34,7 @@ public class Layout {
 
     public Layout(){}
     
-    public Layout(String id, int width, int height, int orientation, int backgroundColor, int gravity) {
-        if (ayas.hasId(id)) {
-            throws new IdentException("ID '" + id + "' has been already defined");
-        } else {
-            
-        }
+    public Layout(int width, int height, int orientation, int backgroundColor, int gravity) {
+        LinearLayout layout = new LinearLayout(
     }
 }
