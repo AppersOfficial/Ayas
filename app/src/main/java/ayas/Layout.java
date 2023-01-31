@@ -34,6 +34,8 @@ public class Layout {
     public Layout(){}
     
     public Layout(String id, int width, int height, int orientation, int backgroundColor, int gravity) {
-
+        if (ayas.hasId(id)) {
+            
+        }
     }
 }
