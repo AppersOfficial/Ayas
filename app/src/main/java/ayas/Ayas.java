@@ -29,4 +29,8 @@ final public class Ayas extends FragmentActivity {
             return false;
         }
     }
+
+    public String getLayoutId(String id) {
+        return ids.get(id);
+    }
 }
