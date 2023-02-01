@@ -7,6 +7,7 @@ import java.util.*;
 public class Layout {
 
     private Ayas ayas = new Ayas();
+    private LinearLayout layout;
 
     private String id;
     public static final int VIEW_GONE = 8;
@@ -35,10 +36,14 @@ public class Layout {
     public Layout(){}
     
     public Layout(int width, int height, int orientation, int color, int gravity) {
-        LinearLayout layout = new LinearLayout(ayas.getApplicationContext());
+        layout = new LinearLayout(ayas.getApplicationContext());
         layout.setLayoutParams(new LinearLayout.LayoutParams(width, height));
         layout.setOrientation(orientation);
         layout.setBackgroundColor(color);
         layout.setGravity(gravity);
+    }
+
+    public void add(Object view) {
+        layout.addView(view);
     }
 }
