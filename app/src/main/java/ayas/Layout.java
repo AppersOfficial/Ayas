@@ -6,7 +6,7 @@ import java.util.*;
 
 public class Layout {
 
-    private Ayas ayas;
+    private Ayas ayas = new Ayas();
 
     private String id;
     public static final int VIEW_GONE = 8;
