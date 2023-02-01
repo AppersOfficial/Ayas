@@ -1,10 +1,11 @@
 package ayas;
 
+import android.view.View;
 import android.widget.LinearLayout;
 import ayas.except.IdentException;
 import java.util.*;
 
-public class Layout {
+public class Layout extends LinearLayout {
 
     private Ayas ayas = new Ayas();
     private LinearLayout layout;
@@ -36,14 +37,14 @@ public class Layout {
     public Layout(){}
     
     public Layout(int width, int height, int orientation, int color, int gravity) {
-        layout = new LinearLayout(ayas.getApplicationContext());
+        layout = new LinearLayout(ayas.getapplicationcontext());
         layout.setLayoutParams(new LinearLayout.LayoutParams(width, height));
         layout.setOrientation(orientation);
         layout.setBackgroundColor(color);
         layout.setGravity(gravity);
     }
 
-    public void add(Object view) {
+    public void add(View view) {
         layout.addView(view);
     }
 }
