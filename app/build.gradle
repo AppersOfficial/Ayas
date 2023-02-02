@@ -47,8 +47,8 @@ afterEvaluate {
                 from components.release
 
                 // You can then customize attributes of the publication as shown below.
-                groupId = 'softray.xdk'
-                artifactId = 'ayas'
+                groupId = 'com.github.AppersOfficial'
+                artifactId = 'Ayas'
                 version = '1.0.0'
             }
         }
